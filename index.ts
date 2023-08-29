@@ -1,6 +1,8 @@
-import Backend from './EuropeCompany/Backend';
+/*import Backend from './EuropeCompany/Backend';
+import Frontend from './EuropeCompany/Frontend';*/
+import Backend from './AmericanCompany/Backend';
+import Frontend from './AmericanCompany/Frontend';
 import Company from './EuropeCompany/Company';
-import Frontend from './EuropeCompany/Frontend';
 import './style.css';
 
 // Write TypeScript code!
@@ -8,6 +10,7 @@ const appDiv: HTMLElement = document.getElementById('app');
 appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;
 
 let company = new Company();
+
 
 let b1 = new Backend('Bogtrotter Industries', 'Briony Bartlett');
 let b2 = new Backend('Bogtrotter Industries', 'Usman Rush');
