@@ -1,3 +1,3 @@
-import { Employee } from './Employee';
+import Employee from './Employee';
 
-class Backend extends Employee {}
+export default class Backend extends Employee {}

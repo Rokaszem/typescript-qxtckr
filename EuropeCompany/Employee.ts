@@ -1,4 +1,4 @@
-class Employee {
+export default class Employee {
   currentProject: string;
   name: string;
 
@@ -15,5 +15,3 @@ class Employee {
     return this.name;
   }
 }
-
-export { Employee };
