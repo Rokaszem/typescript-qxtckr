@@ -1,10 +1,17 @@
 import Employee from '../BritishCompany/Employee';
+import ILocation from '../BritishCompany/ILocation';
 
-export default class Company<T extends Location> {
+export default class Company {
   employees: Employee[] = [];
+  location: ILocation;
+
+  constructor(location: ILocation) {
+    this.location = location;
+  }
 
   add(e: Employee) {
     this.employees.push(e);
+    this.location.addPerson(e);
   }
 
   getProjectList(): Array<string> {

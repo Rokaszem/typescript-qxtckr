@@ -2,14 +2,14 @@ import Employee from '../BritishCompany/Employee';
 import ILocation from '../BritishCompany/ILocation';
 
 export default class CompanyLocationLocalStorage implements ILocation {
-  employees: Employee[];
+  employees: Employee[] = [];
   addPerson(e: Employee): void {
-    throw new Error('Method not implemented.');
+    this.employees.push(e);
   }
   getPerson(i: number): Employee {
-    throw new Error('Method not implemented.');
+    return this.employees.at(i);
   }
   getCount(): number {
-    throw new Error('Method not implemented.');
+    return this.employees.length;
   }
 }

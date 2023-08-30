@@ -1,6 +1,6 @@
 export default class Employee {
-  currentProject: string;
-  name: string;
+  private currentProject: string;
+  private name: string;
 
   constructor(currentProject: string, name: string) {
     this.currentProject = currentProject;
