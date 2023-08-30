@@ -3,14 +3,23 @@ import ILocation from '../BritishCompany/ILocation';
 
 export default class CompanyLocationLocalStorage implements ILocation {
   employees: Employee[] = [];
+
   addPerson(e: Employee): void {
     this.employees.push(e);
     localStorage.setItem('employees', JSON.stringify(this.employees));
   }
+
   getPerson(i: number): Employee {
-    return this.employees.at(i);
+    let tmpEmployees: Employee[] = JSON.parse(
+      localStorage.getItem('employees')
+    );
+    return tmpEmployees.at(i);
   }
+
   getCount(): number {
-    return this.employees.length;
+    let tmpEmployees: Employee[] = JSON.parse(
+      localStorage.getItem('employees')
+    );
+    return tmpEmployees.length;
   }
 }

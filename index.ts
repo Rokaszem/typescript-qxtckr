@@ -31,14 +31,16 @@ c1.getProjectList().forEach((p) => console.log(p));
 
 //region This is for the British Company
 
-
 import Company from './BritishCompany/Company';
 import CompanyLocationArray from './BritishCompany/CompanyLocationArray';
 import CompanyLocationLocalStorage from './BritishCompany/CompanyLocationLocalStorage';
 import Employee from './BritishCompany/Employee';
 
-let c1 = new Company(new CompanyLocationArray());
-let c2 = new Company(new CompanyLocationLocalStorage());
+let cla = new CompanyLocationArray();
+let clls = new CompanyLocationLocalStorage();
+
+let c1 = new Company(cla);
+let c2 = new Company(clls);
 
 let e1 = new Employee('Bogtrotter Industries', 'Briony Bartlett');
 let e2 = new Employee('Bogtrotter Industries', 'Usman Rush');
