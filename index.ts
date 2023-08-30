@@ -5,7 +5,7 @@ import './style.css';
 /*import Backend from './EuropeCompany/Backend';
 import Company from './EuropeCompany/Company';
 import Frontend from './EuropeCompany/Frontend';
-import Company from './EuropeCompany/Company';*/
+import Company from './EuropeCompany/Company';
 import Backend from './AmericanCompany/Backend';
 import Company from './AmericanCompany/Company';
 import Frontend from './AmericanCompany/Frontend';
@@ -26,12 +26,12 @@ c1.add(f5);
 
 c1.getNameList().forEach((n) => console.log(n));
 c1.getProjectList().forEach((p) => console.log(p));
-
+*/
 //endregion
 
 //region This is for the British Company
 
-/*
+
 import Company from './BritishCompany/Company';
 import CompanyLocationArray from './BritishCompany/CompanyLocationArray';
 import CompanyLocationLocalStorage from './BritishCompany/CompanyLocationLocalStorage';
@@ -50,7 +50,7 @@ c2.add(e3);
 
 console.log(c1);
 console.log(c2);
-*/
+
 //endregion
 
 // Write TypeScript code!
