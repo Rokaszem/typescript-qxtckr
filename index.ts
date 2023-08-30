@@ -50,6 +50,8 @@ c1.add(e1);
 c1.add(e2);
 c2.add(e3);
 
+console.log(clls.getPerson(0));
+
 console.log(c1);
 console.log(c2);
 

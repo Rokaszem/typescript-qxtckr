@@ -13,7 +13,10 @@ export default class CompanyLocationLocalStorage implements ILocation {
     let tmpEmployees: Employee[] = JSON.parse(
       localStorage.getItem('employees')
     );
-    return tmpEmployees.at(i);
+    return new Employee(
+      tmpEmployees.at(i)['currentProject'],
+      tmpEmployees.at(i)['name']
+    );
   }
 
   getCount(): number {
